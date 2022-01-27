@@ -1,0 +1,12 @@
+{
+  "name": "Code Editor",
+  "short_name": "Code Editor",
+  "start_url": ".",
+  "background_color": "#fff",
+  "theme_color": "#2f2d41",
+  "display": "standalone",
+  "icons": [{
+    "src": "code_logo.png",
+    "size": "500/500",
+    "type": "image/png"
+  }]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <title>Code Editor</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hackur">
+    <meta name="theme-color" content="#2f2d41" />
+    <meta name="description" content="Code Editor is powerfull editor like VS code, created using javascript libraries, withe having features: code snippets , live autocomplation, syntax highlighting  and atc. developed Hackur." />
+    <link rel="apple-touch-icon" href="code_logo.png" />
+    <link rel="shortcut icon" href="code_logo.png" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="loader-box">
+    <img src="code_logo.png" alt="Code editor" />
+  </div>
+  <div class="back"></div>
+    <nav class="nav">
+        <span id="nav-btn">menu</span>
+        <h3>Code Editor</h3>
+        <button id="run">RUN <span>play_arrow</span></button>
+    </nav>
+    <div class="sidenav" id="sidenav">
+        <div class="top">
+            <h2>Code Editor</h2>
+            <span id="back-btn">arrow_back</span>
+        </div>
+        <img src="dist/code_logo.png" alt="Code logo" />
+        <ul>
+            <li><a href="index.html"><span>home</span> Home</a></li>
+            <li><a href="https://hackur.netlify.app/about" id="about"><span>info</span> About</a></li>
+            <li><a href="https://hackur.netlify.app"><span>contacts</span> Portfolio</a></li>
+            <li><a href="mailto:coderihtml@gmail.com"><span>email</span> Contact Us</a></li>
+        </ul>
+    </div>
+        <div class="container">
+            <div class="box">
+                <div class="title">HTML</div>
+                <div id="htmleh"></div>
+            </div>
+            <div class="box">
+                <div class="title">CSS</div>
+                <div id="csseh"></div>
+            </div>
+            <div class="box">
+                <div class="title">JS</div>
+                <div id="jseh"></div>
+            </div>
+        </div>
+        <div class="pre-container">
+          <div class="pre-top">
+          <span id="close-pre">arrow_back</span>
+            <h3>Preview</h3>
+          </div>
+        <iframe id="preview"></iframe>
+        </div>
+    <!-- about -->
+        <div class="about-box">
+          <div>
+            <span id="close-about">arrow_back</span>
+            <h3>About</h3>
+          </div>
+            <p>Code Editor is powerfull editor like vs code, created using javascript libraries, withe having features: code snippets , live autocomplation, syntax highlighting  and atc. developed by Hackur.</p>
+        </div>
+    <!-- scripts -->
+   <!-- <script src="src/ace.js" type="text/javascript"></script>
+    <script src="src/ext-language_tools.js" type="text/javascript"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.13/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.13/ext-language_tools.min.js"></script>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
